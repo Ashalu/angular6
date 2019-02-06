@@ -24,7 +24,8 @@ export class HomeComponent implements OnInit {
     }
 
     editUser(user: User): void {
-        // console.log(user)
+        console.log("8989898989")
+        console.log(user)
         localStorage.removeItem("editUserId");
         localStorage.setItem("editUserId", user.id.toString());
         this.router.navigate(['edit-user']);

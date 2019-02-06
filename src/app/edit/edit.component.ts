@@ -27,6 +27,7 @@ export class EditComponent implements OnInit {
     }
     this.editForm = this.formBuilder.group({
       id: [userId],
+      email: ['', [Validators.required, Validators.email]],
       username: ['', Validators.required],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],

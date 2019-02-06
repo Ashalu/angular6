@@ -5,7 +5,8 @@
     <table class="table table-striped">
       <thead>
       <tr>
-        <th class="hidden">Id</th>
+        <!-- <th class="hidden">User id</th> -->
+        <th>Email</th>
         <th>UserName</th>
         <th>FirstName</th>
         <th>LastName</th>
@@ -14,7 +15,8 @@
       </thead>
       <tbody>
     <tr *ngFor="let user of users">
-        <td class="hidden">{{user.id}}</td>
+        <!-- <td class="hidden">{{user.id}}</td> -->
+        <td>{{user.email}}</td> 
         <td>{{user.username}}</td> 
         <td>{{user.firstName}}</td> 
         <td>{{user.lastName}}</td>

@@ -1,4 +1,5 @@
-﻿<h2>Register</h2>
+﻿<div style="background-color:#d4d6d9; padding: 40px; margin-top: 10%">
+<h2>Register</h2>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
             <label>Email</label>
@@ -43,3 +44,4 @@
         <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
     </div>
 </form>
+</div>

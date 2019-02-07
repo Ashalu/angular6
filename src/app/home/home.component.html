@@ -3,7 +3,7 @@
     <h4> User Details</h4>
     
     <table class="table table-striped">
-      <thead>
+      <thead class="thead-dark">
       <tr>
         <!-- <th class="hidden">User id</th> -->
         <th>Email</th>
@@ -13,8 +13,8 @@
         <th>Action</th>
       </tr>
       </thead>
-      <tbody>
-    <tr *ngFor="let user of users">
+      <tbody class="table-hover">
+    <tr *ngFor="let user of users" style="background-color: #e0e3e5;">
         <!-- <td class="hidden">{{user.id}}</td> -->
         <td>{{user.email}}</td> 
         <td>{{user.username}}</td> 
@@ -26,7 +26,7 @@
          <a (click)="editUser(user)" class="text-primary" style="font-size: 14px;">Edit</a></td>
         <!-- <button class="btn btn-sm btn-secondary" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td> -->
         </tr>
-<p><a [routerLink]="['/login']">Logout</a></p>
+
 <!-- <tr *ngFor="let user of users">
         <td class="hidden"></td>
         <td></td>
@@ -37,4 +37,5 @@
       </tr> -->
       </tbody>
     </table>
+    <p><a [routerLink]="['/login']">Logout</a></p>
   </div>

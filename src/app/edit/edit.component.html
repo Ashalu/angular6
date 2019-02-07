@@ -1,28 +1,37 @@
-<div class="col-md-6">
-  <h2 class="text-center">Edit User</h2>
+<div style="background-color:#03080f; padding: 40px;">
+  <h2 class="text-center snow">Edit User</h2>
   <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <label for="email">Email address:</label>
+      <label for="email" class="snow">Email address:</label>
       <input formControlName="email" placeholder="Email" name="email" class="form-control" id="email" disabled="true">
     </div>
 
     <div class="form-group">
-      <label for="firstName">First Name:</label>
+      <label for="firstName" class="snow">First Name:</label>
       <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
     </div>
     <div class="form-group">
-      <label for="username">User Name:</label>
+      <label for="username" class="snow">User Name:</label>
       <input formControlName="username" placeholder="User Name" name="username" class="form-control" id="username">
     </div>
 
     <div class="form-group">
-      <label for="lastName">Last Name:</label>
+      <label for="lastName" class="snow">Last Name:</label>
       <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
     </div>
     <div class="form-group">
-      <label for="password">Password</label>
+      <label for="password" class="snow">Password:</label>
       <input type="password" formControlName="password" class="form-control" id="password">
     </div>
     <button class="btn btn-success">Update</button>
+    <a [routerLink]="['/']" class="btn btn-link text-danger">Cancel</a>
   </form>
 </div>
+<style>
+  .form-control{
+      border-radius: 35px;
+  }
+  .snow{
+      color: snow;
+  }
+</style>
